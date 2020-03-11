@@ -1,0 +1,443 @@
+.container
+	width: 1140px
+	height: fit-content
+	margin: 0 auto
+	position: relative
+	
+.header
+	height: 100px
+	display: flex
+	align-items: center
+	justify-content: left
+	&__logo
+		display: inline-block
+		margin-right: 36px
+	&__phone-text
+		display: inline
+		font-size: 14px
+		color: #bcbcbf
+	&__phone
+		padding-left: 4px
+		color: #000
+		+a_hover
+
+.promo
+	height: 840px
+	background: url('../img/helimain.png') center (center / cover) no-repeat
+	justify-content: left
+	&__header
+		padding-top: 286px
+		font-weight: 700
+		font-size: 40px
+		color: #fff
+		span
+			color: $orange
+	&__cost
+		position: relative
+		display: inline-block
+		margin-top: 29px
+		height: 92px
+		width: 224px
+		background-color: $orange
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
+		border-radius: 5px
+		color: #fff
+		&:after
+			content: ''
+			position: absolute
+			left: 130px
+			bottom: -20px
+			border: 10px solid transparent
+			border-top: 10px solid $orange
+	.cost
+		padding-top: 11px
+		&__text
+			padding-left: 22px
+			font-size: 20px
+			line-height: 30px
+			color: #fff
+		&__number
+			padding-left: 23px
+			font-weight: 800
+			font-size: 35px
+			line-height: 47px
+			color: #fff
+	.percent
+		position: absolute
+		right: 29px
+		top: 20px
+		height: 52px
+		width: 52px
+		text-align: center
+		font-weight: 800
+		font-size: 35px
+		box-sizing: border-box
+		border: 1px solid #FFFFFF
+		border-radius: 100%
+		color: #fff
+		
+	&__button
+		display: block
+		margin-top: 22px
+		width: 304px
+		height: 68px
+		padding: 20px 34px
+		background-color: rgba(255,255,255,0)
+		box-sizing: border-box
+		border: 3px solid #fff
+		border-radius: 3px
+		text-align: center
+		font-size: 18px
+		font-weight: 700
+		color: #fff
+		+btn_hover
+
+.description
+	position: relative
+	height: fit-content
+	margin-top: 70px
+	&__header
+		width: 460px
+		height: 90px
+		font-size: 40px
+		line-height: 49px
+		font-weight: 500
+		color: $gray
+	&__text
+		margin-top: 18px
+		width: 550px
+		height: 75px
+		font-size: 18px
+		line-height: 26px
+	.items
+		margin-top: 21px
+		&__block
+			margin-top: 16px
+		&__separator
+			width: 569px
+			height: 1.5px
+			background-color: #C7C7C7
+			margin: 31px auto 0 0
+		.item
+			display: inline
+			margin-left: 12px
+			vertical-align: bottom
+			color: $gray
+	&__video-block
+		position: absolute
+		display: inline-block
+		right: 0
+		top: 0
+		width: 554px
+		height: 374px
+		border-radius: 4px
+	&__photo
+		width: 554px
+		height: 374px
+		background: url('../img/video-pic.png') center (center / cover) no-repeat
+		transition: 5s
+		img
+			position: absolute
+			right: 41px
+			top: 345px
+			width: 16px
+			height: 23px
+			transition: 1s
+			&:hover
+				cursor: pointer
+				transform: scale(1.5)
+	&__video
+		display: none
+		position: absolute
+		right: 0
+		top: 0
+		width: 554px
+		height: 374px
+
+#rewiews-block
+	.rewiews-item
+		display: inline
+		margin-left: 12px
+		vertical-align: bottom
+		margin-top: 20px
+		margin-right: 14px
+		font-size: 18px
+		span
+			font-weight: bold
+
+.photos
+	&__header
+		margin-top: 30px
+		font-size: 20px
+		font-weight: 500
+		line-height: 29px
+		color: #37373F
+	&__items
+		display: inline-block
+		margin-top: 32px
+		img
+			margin: 5px 4px
+			border-radius: 4px
+	&__items-hidden
+		display: none
+		img
+			margin: 5px 4px
+			border-radius: 4px
+	&__show-all
+		display: inline
+		font-size: 17px
+		color: #5286EC
+		cursor: pointer
+	&__opener
+		margin-top: 44px
+		text-align: center
+		img 
+			margin: 0 10px
+
+#separator
+	margin-top: 30px
+	width: inherit
+	height: 1.5px
+	background-color: #C7C7C7
+
+.organizer
+	position: relative
+	&__header
+		margin-top: 37px
+		font-size: 18px
+		font-weight: 500
+		color: #000
+	&__text, &__opener1-hidden, &__opener2-hidden
+		width: 584px
+		height: fit-content
+		font-size: 16px
+		line-height: 24px
+	&__opener1-hidden, &__opener2-hidden
+		display: none
+	&__opener1, &__opener2
+		margin-top: 5px
+		margin-bottom: 40px
+		img
+			margin: 5px
+	&__opener1-read-more, &__opener2-read-more 
+		margin-top: 10px
+		display: inline
+		color: #5286EC
+		cursor: pointer
+	&__profile
+		position: absolute
+		width: 300px
+		height: fit-content
+		right: 70px
+		top: 30px
+		text-align: center
+	&__heart
+		position: absolute
+		margin-left: 47px
+	&__photo
+		padding-top: 15px
+	&__name
+		margin-top: 23px
+		font-size: 18px
+		height: 22px
+		color: #000
+	&__specialty
+		margin-top: 10px
+		font-size: 14px
+	&__show-more
+		margin-top: 11px
+		color: #5286EC
+
+.booking
+	margin-top: 50px
+	&__header
+		width: 288px
+		font-size: 20px
+		font-weight: 500
+		line-height: 29px
+	&__box
+		position: relative
+		margin-top: 30px
+		padding: 30px
+		width: 770px
+		height: 500px
+		box-sizing: border-box
+		border: 1px solid #C7C7C7
+		font-size: 18px
+		line-height: 26px
+	&__date
+		display: inline
+		margin-right: 14px
+	&__time
+		margin-top: 20px
+	&__cost
+		margin-top: 10px
+		font-weight: 700
+		line-height: 22px
+	&__free-places
+		margin-top: 10px
+	&__button1
+		position: absolute
+		right: 30px
+		top: 140px
+	&__button2
+		position: absolute
+		right: 30px
+		top: 280px
+	#button
+		width: 129px
+		height: 50px
+		box-sizing: border-box
+		border: 2px solid $orange
+		border-radius: 3px
+		font-size: 14px
+		color: $orange
+		+btn_hover
+	#separator
+		margin-left: -30px
+	&__rewiews-block
+		margin-top: 60px
+
+.map
+	position: relative
+	height: 500px
+	margin-top: 82px
+	&__box
+		position: absolute
+		width: 420px
+		height: 470px
+		top: -480px
+		padding: 13px 33px
+		background-color: #fff
+		z-index: 2
+	&__point
+		display: inline-block
+		width: 61px
+		height: 61px
+		margin: 17px
+		border-radius: 100%
+		background-color: $orange
+		text-align: center
+		font-size: 35px
+		font-weight: 700
+		color: #fff
+	&__text
+		display: inline-block
+		vertical-align: middle
+		font-size: 16px
+		span
+			font-size: 18px
+			color: #000
+	&__photo
+		display: inline-block
+		margin: 17px
+		width: 67px
+		height: 67px
+	&__name
+		margin-top: 20px
+	&__show-more
+		display: inline-block
+		font-size: 14px
+		color: #5286EC
+
+.reviews
+	&__header
+		margin-top: 131px
+		margin-bottom: 20
+		font-size: 20px
+		font-weight: 500
+	&__client
+		margin-top: 30px
+	&__text
+		display: inline-block
+		width: 510px
+		margin-left: 30px
+	&__img
+		display: inline-block
+		vertical-align: top
+	&__name
+		font-size: 18px
+		line-height: 22px
+	&__specialty
+		margin-top: 10px
+		font-size: 14px
+		line-height: 21px
+	&__stars-img
+		margin-top: 10px
+	&__descr
+		margin-top: 25px
+		font-size: 16px
+		line-height: 24px
+	&__mark
+		display: inline
+		position: relative
+		float: right
+		margin-top: 10px
+		font-size: 14px
+		line-height: 21px
+		color: #B3B3B3
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: 5px
+			left: -22px
+			width: 15px
+			height: 13px
+			background: url('../icons/check.png') center (center / cover) no-repeat
+	&__date
+		margin-top: 14px
+		font-size: 14px
+		line-height: 21px
+		color: #B3B3B3
+	&__show-all
+		margin: 47px auto
+		text-align: center
+		a
+			font-size: 17px
+			line-height: 25px
+			margin: auto 10px
+			color: #5286EC
+
+.footer
+	&__top
+		height: 114px
+		padding: 40px
+	&__logo
+		margin: 10px 50px
+	&__social
+		display: inline-block
+		float: right
+		img
+			margin-right: 30px
+	&__lang
+		display: inline-block
+		position: relative
+		margin-right: 6px
+		color: $gray
+		+a_hover
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 15px
+			height: 8px
+			top: 10px
+			right: -20px
+			background: url('../icons/arrow.svg') center (center / cover) no-repeat
+	&__bottom
+		position: relative
+		height: 77px
+		text-align: center
+		background-color: #FAF9F8
+	&__payment
+		position: absolute
+		margin: 11px 50px
+		float: left
+		img
+			margin-right: 20px
+	&__text
+		padding: 5px
+		font-size: 14px
+		line-height: 25px
+		color: #B3B3B3

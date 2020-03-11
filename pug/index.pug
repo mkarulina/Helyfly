@@ -1,0 +1,197 @@
+doctype html
+html(lang="en")
+	head 
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../css/bootstrap-reboot.min.css">
+		link(rel="stylesheet" href="../../sass/style.css")
+		script(src="http://code.jquery.com/jquery-1.8.3.js")
+		title HELYFLY
+	body
+		header.header
+			.container
+				img(src='../../img/HELYFLY.svg' alt='logo').header__logo
+				.header__phone-text Телефон:
+				a(href='tel:8(800)-123-12-12').header__phone 8(800)-123-12-12
+
+		section.promo
+			.container
+				h1.promo__header Эксклюзивная <span> фотосессия </span> при полете <br> на вертолете
+				.promo__cost
+					.cost
+						.cost__text Стоимость: 
+						.cost__number 1500₽
+					.percent %
+				button.promo__button Забронировать место
+
+		section.description
+			.container
+				h2.description__header Фотосессия <br> в вертолете
+				.description__text Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты
+				.description__list.items
+					.items__block
+						img(src='../../icons/clock.svg' alt='time')
+						.item 3 часа съемки
+					.items__block
+						img(src='../../icons/photo.svg' alt='photo')
+						.item Более 50 фотографий
+					.items__block
+						img(src='../../icons/map-pin-marked.svg' alt='map')
+						.item Москва
+					.items__block
+						img(src='../../icons/speech-bubble.svg' alt='answers')
+						.item Готовы ответить на любые вопросы
+					.items__separator
+					.items__block#rewiews-block
+						img(src='../../icons/cup.svg' alt='cup')
+						.item.rewiews-item Более <span> 50 </span> отзывов с оценкой
+						img(src='../../icons/stars5.png' alt='five stars')
+					.items__separator
+				.description__video-block
+					.description__photo
+						img(src='../../icons/play.png' alt='play').description__play-icon
+					.description__video
+						<iframe class='youtube' width="100%" height="374" src="https://www.youtube.com/embed/1oglB9rfYB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		section.photos
+			.container
+				h3.photos__header Фотографии пакета:
+				.photos__items
+					img(src='../../img/pic1.png' alt='photo')
+					img(src='../../img/pic2.png' alt='photo')
+					img(src='../../img/pic3.png' alt='photo')
+					img(src='../../img/pic4.png' alt='photo')
+					img(src='../../img/pic3.png' alt='photo')
+					img(src='../../img/pic4.png' alt='photo')
+					img(src='../../img/pic1.png' alt='photo')
+					img(src='../../img/pic2.png' alt='photo')
+				.photos__items-hidden
+					img(src='../../img/pic1.png' alt='photo')
+					img(src='../../img/pic2.png' alt='photo')
+					img(src='../../img/pic3.png' alt='photo')
+					img(src='../../img/pic4.png' alt='photo')
+					img(src='../../img/pic3.png' alt='photo')
+					img(src='../../img/pic4.png' alt='photo')
+					img(src='../../img/pic1.png' alt='photo')
+					img(src='../../img/pic2.png' alt='photo')
+				.photos__opener
+					img(src='../../icons/arrow.svg' alt='^').photos__arrow
+					.photos__show-all Показать все фото
+					img(src='../../icons/arrow.svg' alt='^').photos__arrow
+				#separator
+		
+		section.organizer
+			.container
+				h3.organizer__header Об организаторе:
+				.organizer__text Всем привет! Я фотограф Мария! И помимо фотосъемки я также являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания клиентов, специализирующихся на совместном использовании и частных турах.<br><br>Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…
+				.organizer__opener1-hidden Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…
+				.organizer__opener1
+					.organizer__opener1-read-more Читать ещё
+					img(src='../../icons/arrow.svg' alt='^').organizer__opener1-arrow
+				h3.organizer__header Что я предоставлю:
+				.organizer__text Встречу вас на машине после длительного перелёта.<br> Качественный подбор места и локации для вашей съемки.<br> При необходимости всегда возможно прерваться на обед/ужин.<br> Более 50 фотографий на выходе с обработкой и замечательные впечатления о Дубае !
+				.organizer__opener2-hidden Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…
+				.organizer__opener2
+					.organizer__opener2-read-more Читать ещё
+					img(src='../../icons/arrow.svg' alt='^').organizer__opener2-arrow
+				.organizer__profile
+					img(src='../../img/organizer.png' alt='photo').organizer__photo
+					img(src='../../icons/heart.svg' alt='<3').organizer__heart
+					.organizer__name Марина Иванова
+					p.organizer__specialty Фотограф
+					a(href='#').organizer__show-more Показать больше<br> информации о фотографе
+				#separator
+
+		section.booking
+			.container
+				h3.booking__header Доступная съемка в ближайшее время:
+				.booking__box
+					.booking__date Пятница, 14 сентября
+					img(src='../../icons/date.svg' alt='date')
+					#separator
+					.booking__time 15:00 - 18:00
+					.booking__cost 1500₽
+					.booking__free-places Осталось — 1 место
+					button#button.booking__button1 Выбрать
+					#separator
+					.booking__time 19:00 - 22:00
+					.booking__cost 1500₽
+					.booking__free-places Осталось — 1 место
+					button#button.booking__button2 Выбрать
+					.booking__rewiews-block#rewiews-block
+						img(src='../../icons/cup.svg' alt='cup')
+						.item.rewiews-item Более <span> 50 </span> отзывов с оценкой
+						img(src='../../icons/stars5.png' alt='five stars')
+			
+		section.map
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A63860cc2bad9912a7d115f0771a59f9ec9789285befe0a52bd2fd0d57c4b29bb&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+			.container
+				.map__box
+					.map_info
+						.map__point 1
+						.map__text <span>Где встречаемся?</span><br>Москва
+					.map_info
+						.map__point 2
+						.map__text <span>Время съемки</span><br>3 часа
+					.map_info
+						.map__point 3
+						.map__text <span>Мест осталось:</span><br>2 места
+					.map__profile
+						img(src='../../img/organizer.png' alt='photo').map__photo
+						.map__text 
+							.map__name <span> Марина Иванова</span><br>Фотограф
+							a(href='#').map__show-more Показать больше информации
+
+		section.reviews
+			.container
+				h3.reviews__header Отзывы:
+				.reviews__client
+					img(src="../../img/review1.png" alt="client").reviews__img
+					.reviews__text
+						.reviews__name Валерия Антонова<br>
+						.reviews__specialty Арт-директор
+						img(src='../../icons/stars5.png' alt='five stars').reviews__stars-img
+						.reviews__mark Супер! Я бы заказала съемку снова! 
+						.reviews__descr Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!
+						.reviews__date 27 Апреля, 2019г.
+						#separator
+				.reviews__client
+					img(src="../../img/review2.png" alt="client").reviews__img
+					.reviews__text
+						.reviews__name Виталий Петров<br>
+						.reviews__specialty Фотограф
+						img(src='../../icons/stars5.png' alt='five stars').reviews__stars-img
+						.reviews__mark Супер! Я бы заказал съемку снова! 
+						.reviews__descr Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта отличная. Спасибо! 
+						.reviews__date 27 Апреля, 2019г.
+						#separator
+				.reviews__client
+					img(src="../../img/review3.png" alt="client").reviews__img
+					.reviews__text
+						.reviews__name Джим Керри<br>
+						img(src='../../icons/stars5.png' alt='five stars').reviews__stars-img
+						.reviews__mark Супер! Я бы заказала съемку снова! 
+						.reviews__descr Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!
+						.reviews__date 27 Апреля, 2019г.
+						#separator
+				.reviews__show-all
+					img(src='../../icons/arrow.svg' alt='^')
+					a(href='#') Показать все (134)
+					img(src='../../icons/arrow.svg' alt='^')
+		
+		footer.footer
+			.footer__top
+				.container
+					img(src='../../img/HELYFLY.svg' alt='logo').footer__logo
+					.footer__social
+						img(src='../../icons/vk.svg' alt='vk')
+						img(src='../../icons/Instagram.svg' alt='instagram')
+						img(src='../../icons/Facebook.svg' alt='fb')
+						a(href='#').footer__lang RU
+			.footer__bottom
+				.container
+					.footer__payment
+						img(src='../../icons/MC.svg' alt='mastercard')
+						img(src='../../icons/VISA.svg' alt='visa')
+					.footer__text Тех. поддержка: 8(800)700-00-00<br> © 2018 HELYFLY. All Rights Reserved.
+	
+		script(src='../../js/script.js')
